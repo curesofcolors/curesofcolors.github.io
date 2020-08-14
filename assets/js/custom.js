@@ -12,6 +12,22 @@
 
 $(document).ready(function() {
 
+
+  /* Smoothscroll js
+  -----------------------------------------------*/
+    $(function() {
+      $('a.smoothScroll').bind('click', function(event) {
+        event.preventDefault();
+
+        var $anchor = $(this);
+
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top - 47
+        }, 1000);
+      });
+    });
+
+
   /* Home Slideshow Vegas
   -----------------------------------------------*/
     $(function() {
