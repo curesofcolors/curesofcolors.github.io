@@ -59,7 +59,8 @@ p {
 }
 
 #home p,
-#contact p {
+#contact p,
+footer p {
   color: #f9f9f9;
 }
 
@@ -178,8 +179,15 @@ a:hover, a:active, a:focus {
 }
 
 #team,
-#contact {
+#contact,
+footer {
   text-align: center;
+}
+
+#contact,
+footer {
+  background: #304352;
+  color: #ffffff;
 }
 
 
@@ -345,8 +353,6 @@ a:hover, a:active, a:focus {
 #contact {
   padding-top: 60px;
   padding-bottom: 70px;
-  background: #304352;
-  color: #ffffff;
 }
 
 #contact .form-control {
@@ -380,6 +386,49 @@ a:hover, a:active, a:focus {
 #contact input[type="submit"]:hover {
   background: #222;
   color: #ffffff;
+}
+
+
+
+/*---------------------------------------
+    Footer Section
+-----------------------------------------*/
+
+footer {
+  padding-bottom: 10px;
+}
+
+
+
+/*---------------------------------------
+    Social Icons
+-----------------------------------------*/
+
+.social-icon {
+  padding: 0;
+  margin: 0;
+}
+
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+}
+
+.social-icon li a {
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  margin: 20px 10px 10px 10px;
+  padding: 0px;
+}
+
+.social-icon li a:hover {
+  background: #ffffff;
+  color: #e44c65;
 }
 
 
