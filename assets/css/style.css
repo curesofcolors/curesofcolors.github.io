@@ -58,7 +58,8 @@ p {
   line-height: 34px;
 }
 
-#home p {
+#home p,
+#contact p {
   color: #f9f9f9;
 }
 
@@ -164,13 +165,22 @@ a:hover, a:active, a:focus {
     All Sections
 -----------------------------------------*/
 
+.section-title {
+  padding-bottom: 62px;
+}
+
 #about,
-#team {
+#team,
+#contact {
   padding-top: 120px;
   padding-bottom: 120px;
   position: relative;
 }
 
+#team,
+#contact {
+  text-align: center;
+}
 
 
 
@@ -329,6 +339,52 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
+    Contact Section
+-----------------------------------------*/
+
+#contact {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background: #304352;
+  color: #ffffff;
+}
+
+#contact .form-control {
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid #f9f9f9;
+  color: #ccc;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  transition: all 0.4s ease-in-out;
+}
+
+#contact .form-control:focus {
+  border-color: #e44c65;
+  color: #ffffff;
+}
+
+#contact input {
+  height: 55px;
+}
+
+#contact input[type="submit"] {
+  background: #e44c65;
+  border:none;
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#contact input[type="submit"]:hover {
+  background: #222;
+  color: #ffffff;
+}
+
+
+
+/*---------------------------------------
     Responsive Mobile
 -----------------------------------------*/
 
@@ -379,11 +435,17 @@ a:hover, a:active, a:focus {
   }
 
   #about,
-  #team {
+  #team,
+  #contact {
     padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   #about {
     padding-bottom: 0;
+  }
+
+  .section-title {
+    padding-bottom: 20px;
   }
 }
