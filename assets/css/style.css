@@ -161,6 +161,18 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
+    All Sections
+-----------------------------------------*/
+
+#about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+
+
+/*---------------------------------------
     Home Section
 -----------------------------------------*/
 
@@ -195,6 +207,35 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
+    About Section
+-----------------------------------------*/
+
+#about {
+  background: #f0f0f0;
+}
+
+#about .item {
+  display: block;
+}
+
+#about .about-thumb {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 100px;
+  position: relative;
+}
+
+#about .about-img img {
+  border: 8px solid #ffffff;
+  position: absolute;
+  left: -120px;
+  bottom: -325px;
+  padding: 12px;
+}
+
+
+
+/*---------------------------------------
     Responsive Mobile
 -----------------------------------------*/
 
@@ -207,6 +248,19 @@ a:hover, a:active, a:focus {
 @media (max-width: 767px) {
   #home, .overlay {
     height: 100vh;
+  }
+
+  #about .about-thumb {
+    padding: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  #about .col-md-3 img {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -225,5 +279,10 @@ a:hover, a:active, a:focus {
 
   img {
     width: 100%;
+  }
+
+  #about {
+    padding-top: 80px;
+    padding-bottom: 0;
   }
 }
